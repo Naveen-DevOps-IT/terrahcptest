@@ -9,6 +9,7 @@ instance_type = "t2.micro"
 tags = {
 Name = var.instance_name[count.index]
 }
+}
 
 variable "instance_name" {
   default = ["dev-server", "test-server", "prod-server"]
